@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import "./Navbar.css";
+import { Link } from 'react-router-dom';
 
 class Navbar extends Component {
 
@@ -16,10 +17,10 @@ class Navbar extends Component {
           <a href="/" className='logo'>Raptors <span>Sustainerz</span></a>
           <div>
             <ul id='navbar' className={this.state.clicked  ? "#navbar active" : "#navbar"}>
-              <li><a href="#">Home</a></li>
-              <li><a href="#About">About</a></li>
-              <li><a href="#Skill">Login</a></li>
-              <li><a href="#Services">Sign up</a></li>
+              <li><Link to='/'>Home</Link></li>
+              <li><Link to='/about'>About</Link></li>
+              <li><Link to='/login'>Log in</Link></li>
+              <li><Link to='/signup'>Sign up</Link></li>
             
             </ul>
           </div>

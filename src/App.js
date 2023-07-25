@@ -1,32 +1,24 @@
 import './App.css';
-import Navbar from './components/Navbar/Navbar';
-import Top from './pages/Top'
-
-
-// import Admin_Dashboard from './pages/Admin_Dashboard';
-  import Home from './pages/Home';
-import Footer from './components/Footer/Footer';
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import About from './pages/About';
+import Login from './components/Login/Login';
+import SignUp from './components/SignUp/SignUp';
+import CardContent from './CardComponent/CardContent';
 
 function App() {
   return (
     <div className="App">
 
-          <Navbar/>
+      <Routes>
 
-           <Top/> <br />
-           <br />
-         
+        <Route path='/' element={<Home />}></Route>
+        <Route path='/about' element={<About />}></Route>
+        <Route path='/login' element={<Login />}></Route>
+        <Route path='/signup' element={<SignUp />}></Route>
+        <Route path='/cardcontent' element={<CardContent />}></Route>
 
-          <Home/>
-
-          <Footer/>
-          
-
-
-      {/* <Home/> */}
-
-      {/* <Admin_Dashboard /> */}
-
+      </Routes>
 
     </div>
   );

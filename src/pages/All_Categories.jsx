@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/All_Categories.css';
 import { AiOutlineArrowRight } from "react-icons/ai";
+import { Link } from 'react-router-dom';
 import img1 from '../images/img1.jpg';
 import img2 from '../images/img2.jpg';
 import img3 from '../images/img3.jpg';
@@ -27,7 +28,7 @@ const All_Categories = () => {
 
             <div className='btn1'>
 
-              <button>Read More <AiOutlineArrowRight id='arrow' /></button>
+              <button><Link to='/cardcontent' style={{textDecoration: 'none', color: 'black'}}>Read More</Link><AiOutlineArrowRight id='arrow' /></button>
 
             </div>
 
@@ -96,7 +97,7 @@ const All_Categories = () => {
 
             <div className='btn1'>
 
-              <button>Read More <AiOutlineArrowRight id='arrow' /></button>
+              <button> Read More <AiOutlineArrowRight id='arrow' /></button>
 
             </div>
 
